@@ -12,6 +12,8 @@ then
   exit 1
 fi
 
+kubectl create namespace jenkins
+
 helm install jenkins stable/jenkins \
 --namespace jenkins \
 --set master.adminUser="$JENKINS_USER" \
