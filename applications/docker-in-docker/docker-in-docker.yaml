@@ -28,7 +28,7 @@ spec:
       - name: dind-daemon
         ports:
         - containerPort: 2375
-        image: docker:18.09.6-dind
+        image: docker:19.03.6-dind
         resources:
           limits:
             cpu: 1000m
