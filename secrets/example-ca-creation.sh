@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 
 printf "Example ca secret creation:\n"
 printf "\n"

@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 
 printf "Example tls secret creation:\n"
 printf "\n"

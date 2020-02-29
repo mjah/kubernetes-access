@@ -1,16 +1,5 @@
 #!/bin/bash
-
-if [ -z "$JENKINS_USER" ]
-then
-  echo "\$JENKINS_USER is empty. Exiting."
-  exit 1
-fi
-
-if [ -z "$JENKINS_PASS" ]
-then
-  echo "\$JENKINS_PASS is empty. Exiting."
-  exit 1
-fi
+set -euo pipefail
 
 kubectl create namespace jenkins
 

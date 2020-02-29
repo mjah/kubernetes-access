@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 
 kubectl create namespace ingress-nginx
 
