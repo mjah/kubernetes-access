@@ -64,7 +64,6 @@ EOF
 
 cat csr | cfssl genkey - | cfssljson -bare server
 
-
 # Create Kubernetes CSR
 cat <<EOF | kubectl create -f -
 apiVersion: certificates.k8s.io/v1beta1
