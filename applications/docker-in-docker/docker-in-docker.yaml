@@ -12,12 +12,17 @@ spec:
   selector:
     app: dind
 ---
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: dind
+  labels:
+    app: dind
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: dind
   template:
     metadata:
       labels:
